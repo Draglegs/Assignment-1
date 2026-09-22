@@ -55,8 +55,7 @@ int main() {
     if (strcmp(choice, "encrypt") == 0) {
         char message[256], filename[256], key[256];
         printf("Enter the message: ");
-        fgets(message, sizeof(message), stdin);
-        message[strcspn(message, "\n")] = '\0';
+        scanf("%s", message);
         printf("Enter the filename: ");
         scanf("%s", filename);
         printf("Enter the key: ");
